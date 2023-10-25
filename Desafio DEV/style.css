@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
+
+body{
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2d2f31;
+}
+
+.card{
+    align-items: center;
+    justify-content: center;
+    width: 610px;
+    height: 655px;
+    border-radius: 12px;
+    background-color: #fff;
+    font-family: "Lexend", sans-serif;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#foto-enio{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+}
+
+.foto-enio img{
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.foto-enio:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.card-content{
+    align-items: center;
+    justify-content: center;
+}
+
+#title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    color: #2d2f31;
+}
+
+p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2d2f31;
+    padding-bottom: 3px;
+}
+
+.card-social{
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-image{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.social-image img{
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.social-image:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
