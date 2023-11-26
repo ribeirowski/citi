@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+    color: #282525;
+}
+
+header{
+    height: 72px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    padding-top: 24px;
+    text-align: center;
+}
+
+#celebrate{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.celebrate-text{
+    padding-top: 113px;
+    padding-left: 218px;
+}
+
+.celebrate-text h2{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-right: 260px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.celebrate-text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-right: 110px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #5D5656;
+}
+
+.celebrate-image{
+    padding-right: 110px;
+}
+
+.button{
+    padding-top: 12px;
+}
+
+.good-wishes-button{
+    width: 215px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #DC3845;
+    border-radius: 64px;
+    padding: 16px 32px 16px 32px;
+    border: none;
+    cursor: pointer;
+}
+
+.logo{
+    padding-left: 156px;
+}
+
+.natal{
+    padding-left: 4px;
+}
+
+.nav-links{
+    padding-left: 444px;
+}
+
+.menu{
+    padding-left: 48px;
+    text-decoration: none;
+}
+
+.menu:link, .menu:visited{
+    color: #282525;
+}
+
+.menu:hover, .menu:active{
+    color: #DC3845;
+}
+
+.theme{
+    padding-top: 3px;
+    padding-left: 48px;
+}
+
+#gifts{
+    padding-bottom: 82px;
+}
+
+.titulo{
+    padding-top: 18px;
+    text-align: center;
+}
+
+.presentes{
+    text-align: left;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    padding-top: 33px;
+    padding-left: 320px;
+    grid-gap: 40px;
+}
+
+.item{
+    width: 200px;
+    height: 247px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 24px 0px #301D1E1A;
+    border-radius: 12px;
+}
+
+.vector{
+    padding-top: 20px;
+    padding-left: 160px;
+}
+
+.gift-image{
+    padding-left: 40px;
+}
+
+.gift-price{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 0px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 24px;
+}
+
+.gift-name{
+    color: #5D5656;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 0px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 4px;
+    padding-left: 24px;
+}
+
+.gift-card:link, .gift-card:visited, .gift-card:hover, .gift-card:active{
+    color: #282525;
+    text-decoration: none;
+}
