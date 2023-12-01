@@ -6,48 +6,50 @@
     <title>PTA | Desafio de Natal</title>
     <link rel="icon" type="image/x-icon" href="assets/santa.png"/>
     <link rel="stylesheet" href="./styles.css">
+    <script src="script.js"> </script>
 </head>
 <body>
-    <header id="home">
-        <div class="logo">
-            <img src="assets/santa.png" alt="santa-claus">
-        </div>
-        <div class="natal">
-            Christmas
-        </div>
-        <div class="nav-links">
-            <a href="#home" class="menu">Home</a>
-            <a href="#celebrate" class="menu">Celebrate</a>
-            <a href="#gifts" class="menu">Gifts</a>
-            <a href="#new" class="menu">New</a>
-        </div>
-        <div class="theme">
-            <a href="#theme" class="menu">
-                <img src="assets/moon.png" alt="theme-button">
-            </a>
-        </div>
-    </header>
-    <section id="celebrate">
-        <div class="celebrate-text">
-            <h2>Celebrate With A Lot Of Love</h2>
-            <p>In this holidays, celebrate with much love and peace, offering many blessings to our loved ones, friends and neighbors, wishing them a good Christmas message.</p>
-            <div class="button">
-                <a href="#celebrate">
-                    <button class="good-wishes-button">Send Good Wishes</button>
-                </a>
+    <div class="container">
+        <header id="home">
+            <div class="logo">
+                <img src="assets/santa.png" alt="santa-claus">
             </div>
-        </div>
-        <div class="celebrate-image">
-            <img src="assets/fireplace.png" alt="fireplace">
-        </div>
-    </section>
-    <section id="gifts">
-        <div class="titulo">
-            <h2>Share A Gift</h2>
-        </div>
-        <div class="presentes">
+            <div class="christmas">
+                Christmas
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="menu">Home</a>
+                <a href="#celebrate" class="menu">Celebrate</a>
+                <a href="#gifts" class="menu">Gifts</a>
+                <a href="#new" class="menu">New</a>
+            </div>
+            <div class="theme">
+                <button onclick="darkMode()" class="theme-mode">
+                    <img src="assets/moon-dark.png" alt="theme-button" id="change-theme">
+                </button>
+            </div>
+        </header>
+        <section id="celebrate">
+            <div class="celebrate-text">
+                <h2>Celebrate With A Lot Of Love</h2>
+                <p class="text-p">In this holidays, celebrate with much love and peace, offering many blessings to our loved ones, friends and neighbors, wishing them a good Christmas message.</p>
+                <div class="button">
+                    <a href="#celebrate">
+                        <button class="good-wishes-button">Send Good Wishes</button>
+                    </a>
+                </div>
+            </div>
+            <div class="celebrate-image">
+                <img src="assets/fireplace.png" alt="fireplace">
+            </div>
+        </section>
+        <section id="gifts">
+            <div class="title-gift">
+                <h2>Share A Gift</h2>
+            </div>
+            <div class="gifts-image">
                 <div class="item">
-                    <a href="#favorite" class="favorito">
+                    <a href="#favorite" class="favorite">
                         <img src="assets/hearth.png" alt="hearth" class="vector">
                     </a>
                     <a href="#gifts" class="gift-card">
@@ -57,7 +59,7 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#favorite" class="favorito">
+                    <a href="#favorite" class="favorite">
                         <img src="assets/hearth.png" alt="hearth" class="vector">
                     </a>
                     <a href="#gifts" class="gift-card">
@@ -67,7 +69,7 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#favorite" class="favorito">
+                    <a href="#favorite" class="favorite">
                         <img src="assets/hearth.png" alt="hearth" class="vector">
                     </a>
                     <a href="#gifts" class="gift-card">
@@ -77,7 +79,7 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#favorite" class="favorito">
+                    <a href="#favorite" class="favorite">
                         <img src="assets/hearth.png" alt="hearth" class="vector">
                     </a>
                     <a href="#gifts" class="gift-card">
@@ -87,7 +89,7 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#favorite" class="favorito">
+                    <a href="#favorite" class="favorite">
                         <img src="assets/hearth.png" alt="hearth" class="vector">
                     </a>
                     <a href="#gifts" class="gift-card">
@@ -96,7 +98,8 @@
                         <p class="gift-name">Snowman</p>
                     </a>
                 </div>
-        </div>
-    </section>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
