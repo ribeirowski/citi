@@ -37,7 +37,7 @@ header{
     text-align: left;
 }
 
-.celebrate-text p{
+.text-p {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -74,7 +74,7 @@ header{
     padding-left: 156px;
 }
 
-.natal{
+.christmas{
     padding-left: 4px;
 }
 
@@ -85,9 +85,6 @@ header{
 .menu{
     padding-left: 48px;
     text-decoration: none;
-}
-
-.menu:link, .menu:visited{
     color: #282525;
 }
 
@@ -96,20 +93,52 @@ header{
 }
 
 .theme{
-    padding-top: 3px;
+    padding-top: 2px;
     padding-left: 48px;
+}
+
+.theme-mode{
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.dark-theme-mode {
+    color: #FFFFFF;
+    background-color: #251819;
+}
+
+.dark-mode-body {
+    background-color: #251819;
+    color: #F3F2F2;
+}
+
+.dark-mode-menu {
+    color: #F3F2F2;
+}
+
+.dark-mode-p {
+    color: #C2BDBD;
+}
+
+.dark-mode-item {
+    width: 200px;
+    height: 247px;
+    box-shadow: 0px 4px 24px 0px #301D1E1A;
+    border-radius: 12px;
+    background-color: #2F2223;
 }
 
 #gifts{
     padding-bottom: 82px;
 }
 
-.titulo{
+.title-gift{
     padding-top: 18px;
     text-align: center;
 }
 
-.presentes{
+.gifts-image{
     text-align: left;
     display: grid;
     grid-template-columns: 200px 200px 200px;
@@ -121,7 +150,7 @@ header{
 .item{
     width: 200px;
     height: 247px;
-    background-color: #FFFFFF;
+    /* background-color: #ffffff; */
     box-shadow: 0px 4px 24px 0px #301D1E1A;
     border-radius: 12px;
 }
@@ -142,10 +171,14 @@ header{
     letter-spacing: 0em;
     text-align: left;
     padding-left: 24px;
+    color: #282525;
+}
+
+.gift-card{
+    text-decoration: none;
 }
 
 .gift-name{
-    color: #5D5656;
     font-size: 14px;
     font-weight: 500;
     line-height: 0px;
@@ -153,9 +186,36 @@ header{
     text-align: left;
     padding-top: 4px;
     padding-left: 24px;
+    color: #5D5656;
 }
 
-.gift-card:link, .gift-card:visited, .gift-card:hover, .gift-card:active{
+/* .gift-card:visited, .gift-card:hover, .gift-card:active{
     color: #282525;
     text-decoration: none;
+} */
+
+/* Mobile View */
+@media screen and (min-width:250px) and (max-width:480px) {
+.container{
+    grid-template-rows: repeat(1,1fr);
+}
+}
+
+/* Tablet View */
+@media screen and (min-width:481px) and (max-width:768px) {
+.container{
+    grid-template-rows: repeat(3,1fr);
+}
+}
+
+/* Laptop View */
+@media screen and (min-width:769px) and (max-width:1024px) {
+.container{
+    grid-template-rows: repeat(4,1fr);
+}
+}
+
+.container{
+    display: grid;
+    flex-wrap: wrap;
 }
