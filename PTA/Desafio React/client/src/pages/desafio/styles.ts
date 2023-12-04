@@ -13,10 +13,19 @@ export const HomeContainer = styled.div`
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: left;
 `;
 
 export const LogoContainer = styled.div`
     display: flex;
+    padding-top: 7rem;
+    padding-left: 10rem;
+`;
+
+export const TextContainer = styled.div`
+    display: flex;
+    width: 26vw;
+    flex-direction: column;
     padding-top: 7rem;
     padding-left: 10rem;
 `;
@@ -26,7 +35,6 @@ export const LoginContainer = styled.div`
     height: 100vh;
     display: flex;
     flex-direction: column;
-    padding-top: 8rem;
     padding-left: 10rem;
 `;
 
@@ -36,10 +44,7 @@ export const ImageContainer = styled.div`
 `;
 
 export const Headline = styled.h2`
-    font-family: Roboto;
     font-size: 36px;
-    font-weight: 700;
-    text-align: left;
     color: #1E293B;
     
     @media (max-width: 720px) {
@@ -48,13 +53,10 @@ export const Headline = styled.h2`
 `;
 
 export const SubTitle = styled.p`
-    font-family: Roboto;
     font-size: 16px;
-    font-weight: 400;
-    text-align: left;
     color: #475569;
     padding-top: 1.5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     
     @media (max-width: 720px) {
         font-size: 12px;
@@ -62,10 +64,7 @@ export const SubTitle = styled.p`
 `;
 
 export const Title1 = styled.p`
-    font-family: Roboto;
     font-size: 14px;
-    font-weight: 600;
-    text-align: left;
     color: #1E293B;
 
     @media (max-width: 720px) {
@@ -74,9 +73,7 @@ export const Title1 = styled.p`
 `;
 
 export const Title2 = styled.p`
-    font-family: Roboto;
     font-size: 14px;
-    font-weight: 600;
     color: #51E678;
 
     @media (max-width: 720px) {
@@ -98,10 +95,8 @@ export const InputContainer = styled.input`
     color: #1E293B;
     padding: 0 0 0 16px;
     margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
-    font-family: Roboto;
+    margin-bottom: 1.2rem;
     font-size: 14px;
-    font-weight: 400;
     outline: 0;
 
     &::placeholder{
@@ -126,9 +121,7 @@ export const Button = styled.button`
     cursor: pointer;
     margin-top: 0.5rem;
     color: #ffffff;
-    font-family: "Roboto";
     font-size: 16px;
-    font-weight: 700;
 
     &:hover{
         background-color: #57FF86;
