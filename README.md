@@ -10,4 +10,4 @@ Repositório dedicado ao CITi
 
 - **Desafio React**
 
-[<img src="https://github.com/ribeirowski/citi/blob/resposividade/PTA/Desafio%20React/assets/print.png" width="720">](https://github.com/ribeirowski/citi/blob/resposividade/PTA/Desafio%20React/assets/print.png)
+[<img src="https://github.com/ribeirowski/citi/blob/main/PTA/Desafio%20React/assets/print.png" width="720">](https://github.com/ribeirowski/citi/blob/main/PTA/Desafio%20React/assets/print.png)
