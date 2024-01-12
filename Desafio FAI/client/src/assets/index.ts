@@ -1,0 +1,22 @@
+import calendar from "./calendar.png";
+import casa from "./casa.png";
+import exit from "./exit.png";
+import filtro from "./filtro.png";
+import google from "./google.png";
+import grupo from "./grupo.png";
+import joystick from "./joystick.png";
+import lampadaFoguete from "./lampadaFoguete.png";
+import logoAzul from "./logoAzul.png";
+import logoBranca from "./logoBranca.png";
+import logoPreta from "./logoPreta.png";
+import logoVerde from "./logoVerde.png";
+import love from "./love.png";
+import profile from "./profile.png";
+import setaBaixo from "./setaBaixo.png";
+import setaDireita from "./setaDireita.png";
+import setaDuplaDireita from "./setaDuplaDireita.png";
+import setaDuplaEsquerda from "./setaDuplaEsquerda.png";
+import setaEsquerda from "./setaEsquerda.png";
+import wallpaperRegister from "./wallpaperRegister.png";
+
+export { calendar, casa, exit, filtro, google, grupo, joystick, lampadaFoguete, logoAzul, logoBranca, logoPreta, logoVerde, love, profile, setaBaixo, setaDireita, setaDuplaDireita, setaDuplaEsquerda, setaEsquerda, wallpaperRegister };
