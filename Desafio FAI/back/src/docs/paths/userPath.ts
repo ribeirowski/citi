@@ -14,7 +14,7 @@ const userPath = {
             },
             example: {
               name: 'Ednaldo Pereira',
-              phone: '99999999',
+              username: 'ribeirowski',
               email: 'ednaldopereira@gmail.com',
               password: 'senha',
             },

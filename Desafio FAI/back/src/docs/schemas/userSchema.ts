@@ -4,7 +4,7 @@ const userSchema = {
     name: {
       type: 'string',
     },
-    phone: {
+    username: {
       type: 'string',
     },
     email: {
@@ -15,8 +15,14 @@ const userSchema = {
       type: 'string',
       format: 'password',
     },
+    likedGames: {
+      type: 'array',
+      items: {
+        type: 'string',
+      },
+    },
   },
-  required: ['name', 'email', 'password'],
+  required: ['name', 'username', 'email', 'password'],
 };
 
 export default userSchema;

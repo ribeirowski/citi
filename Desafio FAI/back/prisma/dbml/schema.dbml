@@ -5,7 +5,35 @@
 Table User {
   id String [pk]
   name String [not null]
-  phone String
+  username String [unique, not null]
   email String [unique, not null]
-  password String [not null]
+  password String [unique, not null]
+  likedGames String[] [not null]
+  UserMatch UserMatch [not null]
 }
+
+Table Match {
+  id String [pk]
+  game String [not null]
+  link String [not null]
+  local String [not null]
+  description String [not null]
+  date String [not null]
+  time String [not null]
+  UserMatch UserMatch [not null]
+}
+
+Table UserMatch {
+  userId String [not null]
+  matchId String [not null]
+  User User
+  Match Match
+
+  indexes {
+    (userId, matchId) [pk]
+  }
+}
+
+Ref: UserMatch.userId > User.id [delete: Cascade]
+
+Ref: UserMatch.matchId > Match.id [delete: Cascade]

@@ -1,5 +1,5 @@
 import { Prisma, User } from '@prisma/client';
-import prisma from '@database';
+import prisma from '../database';
 
 class UserRepository {
   async create(data: Prisma.UserCreateInput): Promise<User> {
@@ -9,6 +9,11 @@ class UserRepository {
 
   async findByEmail(email: string): Promise<User | null> {
     const user = await prisma.user.findUnique({ where: { email } });
+    return user;
+  }
+
+  async findByUsername(username: string): Promise<User | null> {
+    const user = await prisma.user.findUnique({ where: { username } });
     return user;
   }
 

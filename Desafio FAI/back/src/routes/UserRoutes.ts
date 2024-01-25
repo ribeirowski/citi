@@ -9,9 +9,19 @@ userRouter.route('/')
     UserController.create,
   );
 
+userRouter.route('/')
+  .get(
+    UserController.readAll,
+  );
+
 userRouter.route('/:userId')
   .get(
     UserController.read,
+  );
+
+userRouter.route('/username/:username')
+  .get(
+    UserController.readUsername,
   );
 
 userRouter.route('/:userId')

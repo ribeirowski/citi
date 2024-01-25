@@ -62,6 +62,52 @@ class UserController {
     }
   }
 
+  async readUsername(req: Request, res: Response, next: NextFunction) {
+    try {
+      const { username } = req.params;
+
+      const user = await UserRepository.findByUsername(username);
+
+      if (!user) {
+        return next({
+          status: 404,
+          message: 'User not found',
+        });
+      }
+
+      res.locals = {
+        status: 200,
+        data: user,
+      };
+
+      return next();
+    } catch (error) {
+      return next(error);
+    }
+  }
+
+  async readAll(req: Request, res: Response, next: NextFunction) {
+    try {
+      const users = await UserRepository.findAll();
+
+      if (!users) {
+        return next({
+          status: 404,
+          message: 'Users not found',
+        });
+      }
+
+      res.locals = {
+        status: 200,
+        data: users,
+      };
+
+      return next();
+    } catch (error) {
+      return next(error);
+    }
+  }
+
   async update(req: Request, res: Response, next: NextFunction) {
     try {
       const { userId } = req.params;

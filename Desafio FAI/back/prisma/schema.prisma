@@ -13,9 +13,31 @@ generator dbml {
 }
 
 model User {
-  id       String  @id @default(uuid())
-  name     String
-  phone    String?
-  email    String  @unique
-  password String
+  id          String  @id @default(uuid())
+  name        String
+  username    String  @unique
+  email       String  @unique
+  password    String  @unique
+  likedGames  String[]
+  UserMatch   UserMatch[]
+}
+
+model Match {
+  id          String  @id @default(uuid())
+  game        String
+  link        String
+  local       String
+  description String
+  date        String
+  time        String
+  UserMatch   UserMatch[]
+}
+
+model UserMatch {
+  userId      String
+  matchId     String
+  User        User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  Match       Match?   @relation(fields: [matchId], references: [id], onDelete: Cascade)
+
+  @@id([userId, matchId])
 }
