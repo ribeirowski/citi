@@ -1,5 +1,5 @@
-import React from "react";
-import { InputContainer } from "./style";
+import React from 'react';
+import { InputContainer } from './style';
 
 interface Input {
     type: string;
